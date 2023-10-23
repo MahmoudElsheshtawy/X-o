@@ -1,13 +1,26 @@
+import { useState } from "react"
+import Boxs from "./components/Boxs"
 
 
 function App() {
-
+  const [boxs ,setBox]=useState(["","","","","","","","",""])
   return (
     <>
-   
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+   <div className="section" >
+    <h1>my game tic tac to</h1>
+   <div className="container">
+          <div className="content">
+
+            {boxs.map((box,index)=>(
+
+              <Boxs key={index} />
+
+            )) 
+            }
+          </div>
+     </div>
+     <button style={{marginTop:'30px',background:'#111'}}>Reaset</button>
+   </div>
     </>
   )
 }
