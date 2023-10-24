@@ -28,7 +28,7 @@ const Boxs = ({start ,win,setStart , id , box,boxs,setBoxs}) => {
   //  handle change 
   const handleChangeMark =(boxschange)=>{
     let copyboxs= [...boxs] // coby array
-    copyboxs[id]=boxschange //new valu (circle && close)
+    copyboxs[id]=boxschange //new valu (circle && cross)
     setBoxs(copyboxs) 
   }
   return (

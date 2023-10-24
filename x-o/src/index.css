@@ -1,12 +1,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@400;500&family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,300;1,400;1,500;1,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@400;500&family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,300;1,400;1,500;1,700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@400;500&family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,300;1,400;1,500;1,700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    /* font-family: 'Agbalumo', sans-serif; */
 }
 .section{
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,12 +40,14 @@
     background-color: #141414;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 50px;
+    font-size: 60px;
     transition: .4s ease-in-out;
 }
 .cross{
-    color: rgb(216, 95, 14);
+    color: rgb(251, 255, 33);
+    font-family: 'Agbalumo', sans-serif;
 }
 .circle{
-    color: rgb(8, 211, 218);
+    color: rgb(13, 244, 252);
+    font-family: 'Agbalumo', sans-serif;
 }

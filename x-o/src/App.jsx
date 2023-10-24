@@ -31,9 +31,9 @@ function App() {
    const circleWin = win.every((box)=>boxs[box]=== "circle")
    const crosswin = win.every((box)=>boxs[box]=== "cross")
     if(circleWin){
-    setWin("circle Win")
+    setWin("Circle Win")
     }else if(crosswin){
-     setWin("cross Win")
+     setWin("Cross Win")
  
     }
    })
@@ -62,8 +62,8 @@ return (
             }
           </div>
      </div>
-     <h3>{win}</h3>
-     {!win &&<h3 style={{marginTop:'20px',fontSize:'30px',color:'#fff'}}>{` It's now ${start} turn`}</h3>}
+     <h3 style={{fontSize:"30px" ,fontFamily:'Agbalumo ,sans-serif',color:'#d45400',marginTop:'10px'}}>{win}</h3>
+     {!win &&<h3 style={{marginTop:'20px',fontSize:'30px',color:'#fff'}}>{` It's now "(${start})" turn`}</h3>}
 
    </div>
     </>
