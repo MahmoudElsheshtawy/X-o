@@ -4,13 +4,8 @@
 
 /* eslint-disable react/prop-types */
 const Boxs = ({start ,win,setStart , id , box,boxs,setBoxs}) => {
-
-
-
-
-
-
   const handleClick = (e) =>{
+    
     if (win) {
       
       return;
@@ -37,6 +32,8 @@ const Boxs = ({start ,win,setStart , id , box,boxs,setBoxs}) => {
     setBoxs(copyboxs) 
   }
   return (
+
+
     <>
     <div className="sqware" onClick={handleClick}>
       <div className={box } >{box ?(box ==="circle" ? 'o': "x"):""}</div>

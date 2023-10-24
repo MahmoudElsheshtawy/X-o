@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from "react"
 import Boxs from "./components/Boxs"
 
@@ -44,7 +45,9 @@ useEffect(()=>{
  }
 
 },[boxs,win])
-  return (
+
+
+return (
     <>
    <div className="section" >
    
@@ -60,8 +63,8 @@ useEffect(()=>{
           </div>
      </div>
      <h3>{win}</h3>
-     {!win &&<div>{` its now ${start} turn`}</div>}
-     <button style={{marginTop:'30px',background:'#111'}}>Reaset</button>
+     {!win &&<h3 style={{marginTop:'20px',fontSize:'30px',color:'#fff'}}>{` It's now ${start} turn`}</h3>}
+
    </div>
     </>
   )
